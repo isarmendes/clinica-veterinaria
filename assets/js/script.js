@@ -55,7 +55,7 @@ class ClinicaVeterinaria{
         const nowDate = todayDate.getFullYear();
     
         const age = nowDate - yearDate;
-        return age
+        return age;
       }
 }
 
@@ -88,7 +88,6 @@ function comporclinicavt(){
     console.log(clinicavt);
 
     Veterinaria.add(clinicavt);
-    renderizarConteudo();
     
 }
 
@@ -135,7 +134,7 @@ function renderizarConteudo(){
        
        const clinicaDiv = `
           
-            <div class='jogoDetalhe'>
+            <div class='cvtdetalhe'>
                 <h2>Tutor: ${pet.tutor}</h2>
                 <p>Nome do pet: ${pet.nomedopet}</p>
                 <p>Espécie: ${pet.especie}</p>
@@ -149,4 +148,14 @@ function renderizarConteudo(){
     });
 }
 
+function showLisrt(){
+   
+    document.getElementById("container").classList.remove("hidden")
+    document.getElementById("container-cvt").classList.add("hidden")
+}
 
+function showForm(){
+    renderizarConteudo();
+    document.getElementById("container").classList.add("hidden")
+    document.getElementById("container-cvt").classList.remove("hidden")
+}

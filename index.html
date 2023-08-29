@@ -1,56 +1,62 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <script src="./assets/js/script.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
-   
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <header id="header">
-        <div id="header-1">
         <h1 id="titulo">Clínica Veterinária</h1>
-        <p id="header-p">Cadastro</p>
-        <p id="header-p">Exibição</p>
-    </div>
+        <div id="header-1"></div>
+        <button type="button" onclick="showLisrt()" id="cadastro">Cadastro</button>
+        <button type="button" onclick="showForm()" id="exibicao">Exibição</button>
+
+        </div>
     </header>
 
     <div id="container">
         <h2 id="titulo">
             Cadastro de Pets🐾
         </h2>
-      <div id="input-container">
-        <label for="tutor">Tutor:</label>
-        <input type="text" id="tutor">
+        <div id="input-container">
+            <label for="tutor">Tutor:</label>
+            <input type="text" id="tutor">
 
-        <label for="nomedopet">Nome do Pet:</label>
-        <input type="text" id="nomedopet">
+            <label for="nomedopet">Nome do Pet:</label>
+            <input type="text" id="nomedopet">
 
-        <label for="especie">Espécie:</label>
-        <input type="text" id="especie">
+            <label for="especie">Espécie:</label>
+            <input type="text" id="especie">
 
-        <label for="imgLink">Fotinha:</label>
-        <input type="text" id="imglink">
+            <label for="imgLink">Fotinha:</label>
+            <input type="text" id="imglink">
 
-        <label for="date">Data de Nascimento</label>
-        <input type="date" id="date">
+            <label for="date">Data de Nascimento</label>
+            <input type="date" id="date">
 
 
-        <div id="msg"></div>
+            <div id="msg"></div>
 
-        <button type="button" onclick="comporclinicavt()">Cadastrar</button>
+            <button id="botao_cadastro" type="button" onclick="comporclinicavt()">Cadastrar</button>
 
-      </div>
+        </div>
 
     </div>
-    <div id="cvt">
+    <div id="container-cvt">
+        <div id="cvt">
 
+        </div>
     </div>
     <footer id="footer">
         <p>©2023 Clínica Veterinária Todos os direitos reservados.</p>
     </footer>
-    
+
 </body>
+
 </html>
